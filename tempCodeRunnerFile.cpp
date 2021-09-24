@@ -1,0 +1,1 @@
+Calculates gross pay, tax rate, and net pay in a salary program.
