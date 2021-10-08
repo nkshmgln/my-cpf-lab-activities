@@ -1,1 +1,1 @@
-Calculates gross pay, tax rate, and net pay in a salary program.
+const double Philhealth = 150, SSS = 250, Pagibig = 200;

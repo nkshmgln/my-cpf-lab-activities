@@ -1,8 +1,3 @@
-//Nikosh Maglinao
-//Prelim hands-on exam
-//Description: Payroll program including the calculation of tax
-//Date: October 8,2021
-
 #include<iostream>
 #include<string>
 
@@ -11,8 +6,9 @@ using namespace std;
 int main(){
 
     string EN, Eno, DPD;
-    int Hpr, Hw, Philhealth = 150, SSS = 250, Pagibig = 200;
-    double GrP, WHT, NP;
+    double Hpr, Hw, GrP, WHT, NP;
+
+    const double philhealth = 150, sss = 250, pagibig = 200;
 
     cout <<"\nEnter Employee Name    :";
     getline(cin,EN);
@@ -27,15 +23,9 @@ int main(){
     
     GrP = Hpr * Hw;
     WHT = GrP * 0.12;
-    NP = GrP - (Philhealth + SSS + Pagibig);
+    NP = GrP - (philhealth + sss + pagibig);
 
-    if ( NP <= 5000){
-        cout <<"Contractual";
-    }else if ( NP > 5000-10000){
-        cout <<"Probationary";
-    }else if ( NP > 10000){
-        cout <<"Regular";
-    }
+    
     cout <<"================================================="<< endl;
     cout <<"\nPayroll Summary for  :"<< EN << endl;
     cout <<"Employee no.         :"<< Eno << endl;
@@ -43,13 +33,22 @@ int main(){
     cout <<"\nYou earned "<< GrP <<" at "<< Hw <<" per hour"<< endl;
     cout <<"Gross pay            :Php "<< GrP <<endl;
     cout <<"Withholding tax      :"<< WHT << endl;
-    cout <<"Philhealth           :"<< Philhealth << endl;
-    cout <<"SSS                  :"<< SSS << endl;
-    cout <<"Pagibig              :"<< Pagibig << endl;
-    cout <<"--------------------------------------------------"<< endl;
-    cout <<"\n\nNet pay               Php "<< NP <<endl;
-    cout <<"Employee Status:"<< NP <<endl;
-    cout <<"\n\n"<<endl;
+    cout <<"Philhealth           :"<< philhealth << endl;
+    cout <<"SSS                  :"<< sss << endl;
+    cout <<"Pagibig              :"<< pagibig << endl;
+    cout <<"\n--------------------------------------------------"<< endl;
+    cout <<"\nNet pay               Php "<< NP <<endl;
+    cout <<"Employee Status:";
+    if ( NP <= 5000){
+        cout << "Contractual";
+    }
+    else if ( NP > 5000-10000){
+        cout << "Probationary";
+    }
+    else if ( NP > 10000){
+    cout << "Regular";
+    }
+    cout <<"\n"<<endl;
    
     return 0;
 }
