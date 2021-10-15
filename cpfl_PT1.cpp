@@ -2,29 +2,30 @@
 using namespace std;
 
 int main () {
-	int rnge = 0;
+	int Rng = 0;
 	int count = 0;
-	int numA[50];
+	int NumA[50];
 	int index;
 	string oddEven[50];
 	
 	cout << "Enter range of numbers: ";
-	cin >> rnge;
+	cin >> Rng;
 	
-	cout << "Enter " << rnge <<" consecutive numbers: ";
-	
-	while(count < rnge) {		
-		cin >> numA[index];
-		if (numA[index] % 2 == 0)
+	cout << "Enter " << Rng <<" consecutive numbers: ";
+	index=0;
+	while(count < Rng) {		
+		cin >> NumA[index];
+		if (NumA[index] % 2 == 0)
 			oddEven[index] = "Even";
 		else
 			oddEven[index] = "Odd";
 		index++;
 		count++;
 	}
-	
-	while(count < rnge) {
-		cout << numA[index] << " - " << oddEven[index] << " number" << endl;
+	count=0;
+    index=0;
+	while(count < Rng) {
+		cout << NumA[index] << " - " << oddEven[index] << " number" << endl;
 		index++;
 		count++;
 	}
