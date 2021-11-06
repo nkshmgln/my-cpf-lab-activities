@@ -1,5 +1,5 @@
 //Performance Task 2:
-//Description: Conversation COnsole App using functions {Dollar to Peso & Peso to Dollar}
+//Description: Conversation Console App using functions {Dollar to Peso & Peso to Dollar}
 //             This is also a debugging activity
 //Name: Maglinao, Nikosh O.
 
