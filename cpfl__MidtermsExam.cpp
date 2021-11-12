@@ -29,9 +29,6 @@ double milesToYards(double num) {
 	result = num * 1760;
 	return result;
 }
-
-int main() {
-	int choice = -1;
 	float num = 0;
 	
 	while (choice != 0) {		
