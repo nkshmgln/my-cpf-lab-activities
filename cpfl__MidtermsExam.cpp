@@ -37,7 +37,7 @@ int main() {
 	while (choice != 0) {		
 		system("cls");
 		choice = -1;
-		cout << "Blank Conversion App" << endl << endl;
+		cout << "Lenght Conversion App" << endl << endl;
 		
 		cout << "[1] - Meter to Kilometer\n[2] - Kilometer to Meter\n[3] - Centimeter to Millimeter\n[4] - Miles to Yard\n[0] - Exit\n\nSelect Conversion: ";
 		cin >> choice;
