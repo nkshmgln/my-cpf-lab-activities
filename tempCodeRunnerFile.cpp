@@ -1,1 +1,11 @@
-const double Philhealth = 150, SSS = 250, Pagibig = 200;
+    ou_stream << " ------------------------------------------------------" << endl;
+    ou_stream << "|            S A M P L E  R E C E I P T                |" << endl;
+    ou_stream << " ------------------------------------------------------" << endl;
+    ou_stream << "Customer Name : "<< cname <<endl;
+    ou_stream << "Product 1 : "<< pn1 << "  Quantity :" << pq1 << "  Product Price :" <<prc1 <<endl;
+    ou_stream << "Product 2 : "<< pn2 << "  Quantity :" << pq2 << "  Product Price :" <<prc2 <<endl;
+    ou_stream << "Product 3 : "<< pn3 << "  Quantity :" << pq3 << "  Product Price :" <<prc3 <<endl;
+    ou_stream << "Total Price of the Product : " << TA <<endl;
+    ou_stream << "Total tax : " << VAT <<endl;
+    ou_stream << "Total amount : " << PT <<endl;
+    ou_stream << endl;
