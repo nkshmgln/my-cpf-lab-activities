@@ -55,10 +55,7 @@ int main (){
 }
 
 void searchArray(){
-    int arr[100];
-    int count;
-    int num;
-    int i;
+    int arr[100], count, num, i;
 
     cout <<"Enter number of elements in array : ";
     cin >> count;
@@ -96,7 +93,7 @@ for(i=0; j<size; i++){
     cin>>arr[i];
 
 }
-for(i=0; i<size; i++){
+for(i=0; j<size; i++){
     for(j=i+1; j<size; j++){
         if(arr[j] < arr[i]){
             temp = arr[i];
