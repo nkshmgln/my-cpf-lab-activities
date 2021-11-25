@@ -2,7 +2,6 @@
 //Activity Number: OE6
 //Date: November 25, 2021
 //Description:  Array programming, apply searching and sorting in a dynamic array. Use functions in your solution.
-//              Refer to the menu below:
 
 #include <iostream>
 
@@ -19,11 +18,11 @@ int main (){
     do{
         system("cls");
         cout <<"[1] Searching Array" <<endl;
-        cout <<"[2} Sorting Array (Ascending)" <<endl;
+        cout <<"[2] Sorting Array (Ascending)" <<endl;
         cout <<"[0] Exit the program" <<endl;
         cout <<"Enter your choice:";
-        cin>>ch;
-        cout<<endl;
+        cin >> ch;
+        cout <<endl;
 
         switch(ch){
             case 1:{
@@ -41,8 +40,8 @@ int main (){
                 system("pause");
                 break;
             }
-            defaukt:{
-                cout <<"Invalid Input..."<<endl;
+            default:{
+                cout <<"Invalid Input..." <<endl;
                 system("pause");
                 break;
             }
@@ -50,13 +49,13 @@ int main (){
 
     }while(true);
 
-    
+
     return 0;
 }
 
 void searchArray(){
     int arr[100], count, num, i;
-
+    
     cout <<"Enter number of elements in array : ";
     cin >> count;
 
@@ -68,11 +67,11 @@ void searchArray(){
     cout <<"Enter a number to search in array : ";
     cin >>num;
 
-    for(i=0; i<count ; i++){
+    for(i=0; i<count; i++){
         if (arr[i] == num){
-            cout<<"Element found at index " <<endl;
-            break;
-        }
+            cout<<"Element found at index " <<i <<endl;
+            break; 
+        }         
     }
     if (i == count){
         cout<<"Element not found " <<endl;
@@ -89,11 +88,12 @@ cin >> size;
 
 cout <<"Enter elements in array:";
 
-for(i=0; j<size; i++){
-    cin>>arr[i];
+for(i=0; i<size; i++){
 
+    cin>>arr[i];
 }
-for(i=0; j<size; i++){
+for(i=0; i<size; i++){
+
     for(j=i+1; j<size; j++){
         if(arr[j] < arr[i]){
             temp = arr[i];
@@ -103,8 +103,9 @@ for(i=0; j<size; i++){
 
     }
 }
-cout <<"Element of array is sorted ascending orde:" <<endl;
-for (i=0; j<size; i++){
+cout <<"Elements of array in sorted ascending order:" <<endl;
+for (i=0; i<size; i++){
     cout << arr[i]<<endl;
 }
+
 }
