@@ -63,12 +63,12 @@ int main(){
     }
     else
     { 
-    cout << ("\nThe password you've inputted is wrong!") <<endl;
+    cout << ("\nThe password you've input is wrong!") <<endl;
     } 
     }
     else
     { 
-    cout << ("\nThe user you've inputted does not exist!") <<endl;
+    cout << ("\nThe user you've input does not exist!") <<endl;
     } 
   
     return 0; 
