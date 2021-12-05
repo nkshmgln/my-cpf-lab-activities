@@ -1,6 +1,6 @@
 //Name:Nikosh O. Maglinao
 //Date:December 5,2021
-//Activity no.:7
+//Activity no.7
 //Description:Implement login Credentials using c-string.
 
 #include <iostream>
