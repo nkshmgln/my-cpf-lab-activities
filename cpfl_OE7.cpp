@@ -1,43 +1,75 @@
 //Name:Nikosh O. Maglinao
 //Date:December 5,2021
 //Activity no.:7
-//Description:Create a Program that show the correct and incorrect password
+//Description:Implement login Credentials using c-string.
 
 #include <iostream>
 #include <cstring>
-#include <stdio.h>
 
 using namespace std;
 
-int sub(void){
- int i,j,k;
-
- for(i=1;i<=10;i++){
-   for(j=1;j<=10-i;j++){
-     printf(" ");
-   }
-   for(k=1;k<=i*2-1;k++){
-     printf("*");
- }
- printf("\n");
-}
-
-return 0;
-}
-
 int main(){
-    char my_password[10] = "Test1";
-    char password[10];
-
-    cout << "Enter password : ";
+    char username[10]; 
+    char password[10]; 
+    string name, gender, address, yearandsection, course;
+    int age;
+    long long int cnumber;
+ 
+    cout << "\n Enter your Login Credentials " <<endl;
+    cout << "Enter your Username: "; 
+    cin >> username;
+ 
+    cout << "Enter your Password: "; 
     cin >> password;
+ 
+    if(strcmp(username,"Brixxton007")==0)
+    { 
+        if(strcmp(password,"aintcool")==0)
+    {
+    cout << ("\nLogin is a Success, Welcome!") <<endl;
+    cout<<"Hello CS and IT" <<endl;
+    cout<<"Welcome to Computer Programming Fundamentals"<< endl;
 
-    if(!(strcmp(my_password,password))){
-        cout << "\nCorrect password..." << endl;
-        cout << "Welcome to My Outcomes Evaluation 7!" << endl;
-    }else{
-        cout << "\nIncorrect password..." << endl;
+    cout<<"Enter your Name                  :";
+    cin >> name;
+    cout<<"Enter your Gender                :";
+    cin >> gender;
+    cout<<"Enter your Age                   :";
+    cin >>age;
+    cout<<"Enter your Address               :";
+    cin >> address;
+    cout<<"Enter your Year and Section      :";
+    cin >> yearandsection;
+    cout<<"Enter your Course                :";
+    cin >> course;
+    cout<<"Enter your Contact Number (+63)  :";
+    cin>>cnumber;
+    cin.ignore();
+
+    cout<<"\n---------------------------------------------------------" <<endl;
+    cout<<"\nYour Name is "<<name <<endl;
+
+    cout<<"\nYour Gender is "<<gender <<endl;
+
+    cout<<"\nYou are "<<age<<" years old"<<endl;
+
+    cout<<"\nYour Address is "<<address <<endl;
+
+    cout<<"\nYour Year and Section is "<<yearandsection <<endl;
+
+    cout<<"\nYour Course is "<<course <<endl;
+
+    cout<<"\nYour Contact Number is (+63)"<<cnumber <<endl;
     }
-
-    return 0;
+    else
+    { 
+    cout << ("\nThe password you've inputted is wrong!") <<endl;
+    } 
+    }
+    else
+    { 
+    cout << ("\nThe user you've inputted does not exist!") <<endl;
+    } 
+  
+    return 0; 
 }
