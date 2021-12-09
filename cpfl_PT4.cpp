@@ -17,8 +17,8 @@ int main(){
     ifstream in_stream;
     ofstream ou_stream;
 
-    char username[10];
-    char password[10];
+    char username[10]; 
+    char password[10]; 
     string name;
     int eng, mth, scs, prgm, pe; 
     int sum;
