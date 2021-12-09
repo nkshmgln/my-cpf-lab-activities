@@ -18,6 +18,7 @@ int main(){
     int eng, mth, scs, prgm, pe; //eng-english, mth-math, scs-science, prgm-programming, pe-physical education
     int sum;
     long long int average;
+    
 
     cout << "\n Enter your Login Credentials " <<endl;
     cout << "Enter your Username: "; 
