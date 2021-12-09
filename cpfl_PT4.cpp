@@ -5,16 +5,13 @@
 
 #include<iostream>
 #include<fstream>
-#include<iomanip>
 #include<cstring>
-#include<string>
 #include<cstdlib>
 
 using namespace std;
 
 int main(){
 
-    ifstream in_stream;
     ofstream ou_stream;
 
     char username[10]; 
@@ -22,10 +19,9 @@ int main(){
     string name;
     int eng, mth, scs, prgm, pe; 
     int sum;
-    long long int average;
+    long long int average; 
 
-    in_stream.open("in_file.txt");
-    ou_stream.open("ou_file.txt", ios::app);
+    ou_stream.open("ou_file.txt",ios::app);
 
     cout << "\n Enter your Login Credentials " <<endl;
     cout << "Enter your Username: "; 
@@ -42,6 +38,7 @@ int main(){
     cout<<"Welcome to Grading System"<< endl;
     cout<<"Enter your name : ";
     cin >>name;
+    
 
     cout<<"Enter Grade in English            : ";
     cin >>eng;
@@ -106,7 +103,6 @@ int main(){
          cout << ("\nThe user you've input does not exist!") <<endl;
     } 
     
-    in_stream.close();
     ou_stream.close();
     return 0; 
 }
