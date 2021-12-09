@@ -1,38 +1,46 @@
 //Name: Nikosh Malinao
-//Activity;
+//Activity
+
 #include<iostream>
 
 using namespace std;
 
 int main()
 {
-   float homework = 0.0f;
-   float h_score = 0.0f;
-   float exam = 0.0f;
-   float e_score = 0.0f;
-   float final_exam = 0.0f;
-   float project = 0.0f;
+   int eng, mth, scs, prgm, pe;
+   float total, average, percentage;
+   cout<<" Please Enter the marks of Five subjects :  \n";
+   cin >> eng >> mth >> scs >> prgm >> pe;
+   total = eng + mth + scs + prgm >> pe;
+   average = total/ 5;
+   percentage = ( total / 500) * 100;
+   cout <<"\nTotal Marks         = "<< total;
+   cout <<"\nAverage Marks       = "<< average;
+   cout <<"\nMarks Percentage    = "<< percentage;
 
-   float final_grade = 0.0f;
-
-   for(int i=0; i <5; i++){
-       cout<<"Grade for homework"<<i + 1<<": ";
-       cin >>h_score;
-
-       h_score += homework;
+   if (percentage >= 95 && percentage <=100)
+   {
+       cout <<"\nGrade is Excellent";
    }
-   h_score /= 5.0f;
-
-   for(int i=0; i <2; i++){
-       cout<<"Grade for Exam"<<i + 1<<": ";
-       cin >>e_score;
-
-       e_score += exam;
+   if (percentage >= 90 && percentage <=94)
+   {
+       cout <<"\nGrade is Very Satifactory ";
    }
-   e_score /= 2.0f;
-
-   cout <<"Homework Score: "<< h_score;
-   cout <<"Exam Score    : "<< e_score;
- 
+   if (percentage >= 85 && percentage <=89)
+   {
+       cout <<"\nGrade is Satifactory";
+   }
+   if (percentage >= 80 && percentage <=84)
+   {
+       cout <<"\nGrade is Very Good";
+   }
+   if (percentage >= 75 && percentage <=79)
+   {
+       cout <<"\nGrade is Good";
+   }
+   else
+    {
+        cout<<" You are Poor "<<endl;
+    }
    return 0;
 }
