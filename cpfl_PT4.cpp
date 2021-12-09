@@ -61,7 +61,7 @@ int main(){
     cout.setf(ios::showpoint);
     cout.precision(2);
 
-    ou_stream <<"Enter your Name : "<<endl;
+    ou_stream <<"Enter your Name : "<< name <<endl;
     ou_stream <<"\nGrade in English       : "<< eng <<endl;
     ou_stream <<"Grade in Mathematics     : "<< mth <<endl;
     ou_stream <<"Grade in Science         : "<< scs <<endl;
